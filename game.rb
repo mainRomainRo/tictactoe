@@ -6,8 +6,8 @@ class Game
 
 	def initialize
 	@@board = Board.new
-	@@player_1 = Player.new("X")
-    @@player_2 = Player.new("O")
+	@player_1 = Player.new("X")
+    @player_2 = Player.new("O")
 	end
 
 	def input(move, symbol)
@@ -18,13 +18,12 @@ class Game
 
 	def party
 	i=0
-	@@board
+	board= " - - - "
 
 	puts "\n------------------ Round number #{i+1} --------------------"
 	puts "Where are you going to play ? [1-9]"
     player_input = gets.chomp.to_i - 1
-    puts @@board[player_input] = @@player_1.symbol
-    @@board.print_table
+    
 
 end
 end
