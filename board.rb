@@ -32,11 +32,10 @@ end
 
 class BoardCase
 	attr_accessor :status
-
-  
-  def initialize(status="")
+	
+	def initialize(status="")
   	@status=status
-  	
+
   end
   
   def to_s

@@ -11,15 +11,15 @@ class Game
     @player_2 = Player.new("O")
 	end
 
-	def board(player_move, player_symbol)
+	def input(player_move)
 	input = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 	end
 
-	def party(player)
+	def party
 	i=0
 
 	puts "\n------------------ Round number #{i+1} --------------------"
-	puts "Where are you going to play #{palyer} ? [1-9]"
+	puts "Where are you going to play ? [1-9]"
     player_input = gets.chomp.to_i - 1
     input[player_input] = player.symbol
 
